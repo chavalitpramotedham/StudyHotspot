@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Activities"
         android:textAlignment="center"
-        android:textSize="30"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,24 @@
         android:outlineProvider="background"
         android:outlineSpotShadowColor="#201C1C"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="46dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="0dp"
         tools:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="347dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
