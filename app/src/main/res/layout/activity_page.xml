@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".ActivityPage">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Activities"
+        android:textAlignment="center"
+        android:textSize="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark"
+        android:backgroundTint="#191616"
+        android:backgroundTintMode="add"
+        android:foregroundTint="#151414"
+        android:foregroundTintMode="add"
+        android:outlineAmbientShadowColor="#171515"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="#201C1C"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="46dp"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
