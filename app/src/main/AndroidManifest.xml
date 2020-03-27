@@ -22,22 +22,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.studyhotspot.CreateSession"></activity>
+        <activity android:name=".CreateSession" />
 
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
 
         <activity
-            android:name="com.example.studyhotspot.LocationInformationActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".LocationInformationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.studyhotspot.RatingActivity"
+            android:name=".RatingActivity"
             android:label="@string/title_activity_rating"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.studyhotspot.Login" />
-        <!--         <activity android:name=".Register"></activity> -->
-        <activity android:name="com.example.studyhotspot.MapsActivity" />
+        <activity android:name=".Login" /> <!-- <activity android:name=".Register"></activity> -->
+        <activity android:name=".MapsActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -53,7 +52,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name="com.example.studyhotspot.Register">
+        <activity android:name=".FindFriend">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

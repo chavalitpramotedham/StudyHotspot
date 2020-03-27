@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Login extends AppCompatActivity {
     EditText mEmail,mPassword;
@@ -66,6 +68,11 @@ public class Login extends AppCompatActivity {
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+
+                        FirebaseFirestore db = FirebaseFirestore.getInstance();
+                        CollectionReference users = db.collection("users");
+
+
                         if(task.isSuccessful()){
                             Toast.makeText(Login.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),MapsActivity.class));
