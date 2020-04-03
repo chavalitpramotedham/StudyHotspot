@@ -16,16 +16,16 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/image"
-        android:src="@mipmap/ic_launcher"
-        android:layout_weight="1"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
 
-        />
+            />
 
-    <de.hdodenhof.circleimageview.CircleImageView
+        <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:id="@+id/image3"

@@ -95,7 +95,7 @@ public class LocationInformationActivity extends AppCompatActivity {
 
         StringBuilder sb = new StringBuilder();
         sb.append("http://maps.google.com/maps?daddr=");
-        sb.append(coord);
+        sb.append(name);
         String url = sb.toString();
 
 
